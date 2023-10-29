@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistem Pakar Diagnosis Penyakit Kulit</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header pt-2 px-2">
+        <a class="mx-3" href="/SkinAnalyzer/">
+            <p class="fs-5 fw-bolder">Skin Analyzer</p>
+        </a>
+        <a class="mx-2 fs-6 fw-bolder" href="#about">About</a>
+    </div>
+    <main class="w-100">
+        <div class="container d-flex mbc m-auto align-items-center flex-column">
+            <div class="form w-75">
+                <div class="form_atas fs-5 fw-bolder">Centang gejala yang anda miliki</div>
+                <form method="post" autocomplete="off">
+                    <input type="hidden" name="csrfmiddlewaretoken"
+                        value="In7TuLIMZ9dvLXMFMGGdcrHMe2Je9dAjgFsfYsFj9IxMPdJN8fR1pBIF01tthaBZ">
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Ada peradangan pada kulit berwarna kemerahan" id="gejala1"
+                                name="input_gejala">
+                            <label for="gejala1">Ada peradangan pada kulit berwarna kemerahan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Terdapat bintik-bintik warna merah" id="gejala2"
+                                name="input_gejala">
+                            <label for="gejala2">Terdapat bintik-bintik warna merah</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Bercak atau ruam pada kulit yang berkelompok" id="gejala3"
+                                name="input_gejala">
+                            <label for="gejala3">Bercak atau ruam pada kulit yang
+                                berkelompok</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Mata merah dan sensitive terhadap cahaya" id="gejala4"
+                                name="input_gejala">
+                            <label for="gejala4">Mata merah dan sensitive terhadap cahaya</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Demam disertai sakit kepala" id="gejala5" name="input_gejala">
+                            <label for="gejala5">Demam disertai sakit kepala</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox"
+                                value="Menyerupai gejala pilek seperti batuk kering, hidung beringus, dan sakit tenggorokan"
+                                id="gejala6" name="input_gejala">
+                            <label for="gejala6">Menyerupai gejala pilek seperti batuk kering, hidung beringus, dan
+                                sakit tenggorokan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="sakit dan nyeri pada sendi" id="gejala7" name="input_gejala">
+                            <label for="gejala7">sakit dan nyeri pada sendi</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="diare atau muntah-muntah" id="gejala8" name="input_gejala">
+                            <label for="gejala8">diare atau muntah-muntah</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Terbentuk titik putih di bagian puncak benjolan" id="gejala9"
+                                name="input_gejala">
+                            <label for="gejala9">Terbentuk titik putih di bagian puncak benjolan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Benjolan bertambah besar dan berisi nanah" id="gejala10"
+                                name="input_gejala">
+                            <label for="gejala10">Benjolan bertambah besar dan berisi nanah</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox"
+                                value="Kulit di sekitar benjolan berubah menjadi merah, terasa hangat saat disentuh, dan bengkak"
+                                id="gejala11" name="input_gejala">
+                            <label for="gejala11">Kulit di sekitar benjolan berubah menjadi merah, terasa hangat saat
+                                disentuh, dan bengkak</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Mati rasa atau kesemutan pada kulit" id="gejala12"
+                                name="input_gejala">
+                            <label for="gejala12">Mati rasa atau kesemutan pada kulit</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Kulit terasa gatal" id="gejala13" name="input_gejala">
+                            <label for="gejala13">Kulit terasa gatal</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Pembekakan kelenjar getah bening" id="gejala14"
+                                name="input_gejala">
+                            <label for="gejala14">Pembekakan kelenjar getah bening</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="memiliki luka di beberapa bagian tubuh" id="gejala15"
+                                name="input_gejala">
+                            <label for="gejala15">memiliki luka di beberapa bagian tubuh</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Nafsu makan berkurang" id="gejala16" name="input_gejala">
+                            <label for="gejala16">Nafsu makan berkurang</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Kelelahan" id="gejala17" name="input_gejala">
+                            <label for="gejala17">Kelelahan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Ruam menjadi bentol-bentol kecil yang gatal" id="gejala18"
+                                name="input_gejala">
+                            <label for="gejala18">Ruam menjadi bentol-bentol kecil yang gatal</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Kulit menjadi kering dan bersisik" id="gejala19"
+                                name="input_gejala">
+                            <label for="gejala19">Kulit menjadi kering dan bersisik</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Rasa gatal pada benjolan" id="gejala20" name="input_gejala">
+                            <label for="gejala20">Rasa gatal pada benjolan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Ruam yang berkumpul" id="gejala21" name="input_gejala">
+                            <label for="gejala21">Ruam yang berkumpul</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Benjolan kecil muncul di atas kulit" id="gejala22"
+                                name="input_gejala">
+                            <label for="gejala22">Benjolan kecil muncul di atas kulit</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Bentuk benjolan tidak beraturan" id="gejala23"
+                                name="input_gejala">
+                            <label for="gejala23">Bentuk benjolan tidak beraturan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Sensasi panas atau terbakar akibat adanya peradangan"
+                                id="gejala24" name="input_gejala">
+                            <label for="gejala24">Sensasi panas atau terbakar akibat adanya peradangan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Terasa gatal dan bisa berdarah" id="gejala25"
+                                name="input_gejala">
+                            <label for="gejala25">Terasa gatal dan bisa berdarah</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox"
+                                value="Timbul bercak merah menyerupai luka yang tidak terasa nyeri, tetapi gatal"
+                                id="gejala26" name="input_gejala">
+                            <label for="gejala26">Timbul bercak merah menyerupai luka yang tidak terasa nyeri, tetapi
+                                gatal</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Diameternya lebih besar dari 6 mm" id="gejala27"
+                                name="input_gejala">
+                            <label for="gejala27">Diameternya lebih besar dari 6 mm</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Kulit melepuh berisi cairan" id="gejala28"
+                                name="input_gejala">
+                            <label for="gejala28">Kulit melepuh berisi cairan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Kulit di sekitar luka mengalami iritasi" id="gejala29"
+                                name="input_gejala">
+                            <label for="gejala29">Kulit di sekitar luka mengalami iritasi</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="Nyeri dan gatal pada kulit yang melepuh" id="gejala30"
+                                name="input_gejala">
+                            <label for="gejala30">Nyeri dan gatal pada kulit yang melepuh</label>
+                        </li>
+                    </ul>
+                    <div></div>
+                    <hr class="m-4">
+                    <div class="button px-3">
+                        <button class="btn btn-brown px-3 m-auto" type="button"
+                            onclick="redirectToResult()">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container mc m-auto"></div>
+        </div>
+    </main>
+    <div class="bawah">
+        <div class="container m-auto pbc" id="about">
+            <div class="about d-grid justify-content-center m-4">
+                <p class="fs-3 fw-bolder" style="color: rgb(255, 238, 0);">Skin Analyzer 2023</p>
+                <p class="fs-1 fw-bolder">APA ITU SKIN ANALYZER</p>
+                <div class="w-100 text-about">
+                    <p class="fs-5">Skin Analyzer merupakan suatu sistem pakar yang dibuat untuk melakukan pendiagnosaan
+                        penyakit kulit. Dengan menggunakan sistem ini, para user dapat memilih gejala yang dialami dan
+                        akan
+                        memberi solusi yang relevan terhadap gejala tersebut.
+                    </p>
+                </div>
+                <a class="btn btn-brown px-3 m-auto" href="form.html" role="button">Mulai Diagnosa</a>
+            </div>
+        </div>
+        <footer class="w-100 text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">Kelompok 3</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
